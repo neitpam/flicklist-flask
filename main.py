@@ -1,3 +1,4 @@
+import random
 from flask import Flask
 
 app = Flask(__name__)
@@ -22,8 +23,9 @@ def index():
 
 def get_random_movie():
     # TODO: make a list with at least 5 movie titles
+    flicklist = ["Interstellar", "Jurassic Park", "American Beauty", "Primal Fear", "127 Hours"]
     # TODO: randomly choose one of the movies, and return it
-    return "The Big Lebowski"
+    return (random.choice(flicklist))
 
 
 app.run()
