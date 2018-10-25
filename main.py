@@ -14,6 +14,8 @@ def index():
     content = "<h1>Movie of the Day</h1>"
     content += "<ul>"
     content += "<li>" + movie + "</li>"
+    content += "<h1>Tomorrows Movie</h1>"
+    content += "<li>" + movie + "</li>"
     content += "</ul>"
 
     # TODO: pick another random movie, and display it under
