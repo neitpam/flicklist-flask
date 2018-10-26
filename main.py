@@ -62,16 +62,18 @@ crossoff_form = """
 # "Star Wars has been crossed off your watchlist".
 # And create a route above the function definition to receive and handle the request from 
 # your crossoff_form.
+
 @app.route("/crossoff", methods=['POST'])
 def crossoff_movie():
     crossed_off_movie = request.form['crossed-off-movie']
 
     #build response content
-    crossoff_element = "<strong>" + crossed_off_movie + "</strong>"
+    crossoff_element = "<strike><strong>" + crossed_off_movie + "</strong></strike>"
     sentence= crossoff_element + " has been crossed off your watchlist!"
     content= page_header + "<p>" + sentence + "</p>" + page_footer
 
-    return content    
+    return content   
+
 
 # TODO:
 # modify the crossoff_form above to use a dropdown (<select>) instead of
