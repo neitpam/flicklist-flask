@@ -36,7 +36,7 @@ def get_current_watchlist():
     # returns user's current watchlist--hard coded for now
     return [ "Star Wars", "Minions", "Freaky Friday", "My Favorite Martian" ]
 
-# a form for crossing off watched movies
+# a frm for crossing off watched movies
 # (first we build a dropdown from the current watchlist items)
 crossoff_options = ""
 for movie in get_current_watchlist():
