@@ -22,6 +22,9 @@ page_footer = """
 
 # a form for adding new movies
 add_form = """
+    <style>
+        .error {{ color: red}}
+    </style>
     <form action="/add" method="post">
         <label>
             I want to add
